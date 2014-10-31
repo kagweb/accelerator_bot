@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.hear /accelerator|@accelerator|一方通行|@一方通行|アクセラレータ|@アクセラレータ/i, (msg) ->
-    msg.send msg.random [
+    msg.reply msg.random [
       "俺が弱くなったところで、別にお前が強くなった訳じゃねェだろうがよ、アァ!?",
       "悪ィが、こっから先は一方通行だ。",
       "やること分かるとやる気が出るねェ！",
@@ -15,4 +15,4 @@ module.exports = (robot) ->
     ]
 
   robot.hear /ぬるぽ/, (msg) ->
-    msg.send "ｶﾞｯ"
+    msg.reply "ｶﾞｯ"
